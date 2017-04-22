@@ -1,0 +1,876 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/ripple-emulator/ripple">ripple-emulator (v0.9.36)</a>
+</h1>
+<h4>A browser based html5 mobile application development and testing tool</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator">module ripple-emulator</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>cordovaPrepare</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>cordovaProject</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>emulate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>help</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>hosted</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>index</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>parser</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>proxy</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>static</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ripple-emulator.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.cordovaPrepare">module ripple-emulator.cordovaPrepare</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.cordovaPrepare.refresh">
+            function <span class="apidocSignatureSpan">ripple-emulator.cordovaPrepare.</span>refresh
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.cordovaProject">module ripple-emulator.cordovaProject</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.cordovaProject.inject">
+            function <span class="apidocSignatureSpan">ripple-emulator.cordovaProject.</span>inject
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.emulate">module ripple-emulator.emulate</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.emulate.start">
+            function <span class="apidocSignatureSpan">ripple-emulator.emulate.</span>start
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.help">module ripple-emulator.help</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.help.call">
+            function <span class="apidocSignatureSpan">ripple-emulator.help.</span>call
+            <span class="apidocSignatureSpan">(command)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.hosted">module ripple-emulator.hosted</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.hosted.inject">
+            function <span class="apidocSignatureSpan">ripple-emulator.hosted.</span>inject
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.index">module ripple-emulator.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.index.interpret">
+            function <span class="apidocSignatureSpan">ripple-emulator.index.</span>interpret
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.parser">module ripple-emulator.parser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.parser.map">
+            function <span class="apidocSignatureSpan">ripple-emulator.parser.</span>map
+            <span class="apidocSignatureSpan">(key, func)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.parser.parse">
+            function <span class="apidocSignatureSpan">ripple-emulator.parser.</span>parse
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.proxy">module ripple-emulator.proxy</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.proxy.start">
+            function <span class="apidocSignatureSpan">ripple-emulator.proxy.</span>start
+            <span class="apidocSignatureSpan">(options, app)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.static">module ripple-emulator.static</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.static.inject">
+            function <span class="apidocSignatureSpan">ripple-emulator.static.</span>inject
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ripple-emulator.version">module ripple-emulator.version</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ripple-emulator.version.call">
+            function <span class="apidocSignatureSpan">ripple-emulator.version.</span>call
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator" id="apidoc.module.ripple-emulator">module ripple-emulator</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.cordovaPrepare" id="apidoc.module.ripple-emulator.cordovaPrepare">module ripple-emulator.cordovaPrepare</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.cordovaPrepare.refresh" id="apidoc.element.ripple-emulator.cordovaPrepare.refresh">
+        function <span class="apidocSignatureSpan">ripple-emulator.cordovaPrepare.</span>refresh
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">refresh = function () {
+    var cordovaPrepare;
+
+    try {
+        cordovaPrepare = require.resolve('cordova') ? require('cordova/src/prepare') : null;
+    } catch (e) {
+        console.log('INFO: '.green +
+                    'Could not find cordova as a local module. Expecting to find it installed globally.');
+    }
+
+    return function (req, res /*, next */) {
+
+        var callback = function (err) {
+            if (err) {
+                console.error('Failed to execute command: cordova prepare. '.red +
+                              'Make sure you\'ve installed cordova.'.red);
+                res.status(500).send('Cannot prepare sources for the platform: ' + err);
+            } else {
+                res.status(200).send('OK');
+                console.log('... done.');
+            }
+        };
+
+        if (req.staticPlatform) {
+            console.log('refreshing project (platform: ' + req.staticPlatform + ') ...');
+            if (!!cordovaPrepare) {
+                cordovaPrepare({ platforms: [ req.staticPlatform ] }).then(callback).done();
+            } else {
+                exec('cordova prepare ' + req.staticPlatform, callback);
+            }
+        } else {
+            res.status(500).send('Cannot prepare: no platform is detected');
+        }
+
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.cordovaProject" id="apidoc.module.ripple-emulator.cordovaProject">module ripple-emulator.cordovaProject</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.cordovaProject.inject" id="apidoc.element.ripple-emulator.cordovaProject.inject">
+        function <span class="apidocSignatureSpan">ripple-emulator.cordovaProject.</span>inject
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inject = function (opts) {
+    var paths = buildPaths(opts);
+    return function (req, res, next) {
+        var pth = paths.orig,
+            userAgent = opts.userAgent || "";
+
+        if (opts.cordova) {
+            if (userAgent.match(/Android/)) { pth = paths.android; req.staticPlatform = "android"; }
+            else if (userAgent.match(/iPhone/)) { pth = paths.ios; req.staticPlatform = "ios"; }
+            else if (userAgent.match(/iPad/)) { pth = paths.ios; req.staticPlatform = "ios"; }
+            else if (userAgent.match(/BB10/)) { pth = paths.blackberry; req.staticPlatform = "blackberry"; }
+            else if (userAgent.match(/PlayBook/)) { pth = paths.blackberry; req.staticPlatform = "blackberry"; }
+            else if (userAgent.match(/BlackBerry/)) { pth = paths.blackberry; req.staticPlatform = "blackberry"; }
+            else { pth = paths.android; req.staticPlatform = "android"; }
+        }
+
+        req.staticSource = pth;
+        next();
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+url = require('url'),
+
+HEAD_TAG = /&lt;\s*head\s*&gt;/,
+
+HOSTED_PKG_DIR = path.join(__dirname, "..", "..", "..", "pkg", "hosted"),
+
+BOOTSTRAP_FROM_IFRAME = 'if (window.top.ripple) { ' +
+                            'window.top.ripple("bootstrap").<span class="apidocCodeKeywordSpan">inject</span>(window
+, document);' +
+                        '}';
+
+// TODO: Put this and xhr_proxy into common file (epic DRY..)?
+function proxyRemote(opts, req, res) {
+var proxyReqData,
+    proxyReqHeaders,
+    proxyReq,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.emulate" id="apidoc.module.ripple-emulator.emulate">module ripple-emulator.emulate</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.emulate.start" id="apidoc.element.ripple-emulator.emulate.start">
+        function <span class="apidocSignatureSpan">ripple-emulator.emulate.</span>start
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">start = function (options) {
+    var app = server.start(options);
+
+    if (!options.path) {
+        options.path = [process.cwd()];
+    } else {
+        try {
+            process.chdir(options.path[0]);
+        } catch (err) {
+            console.error('Cannot cd to the project directory:'.red.bold, err.toString());
+            process.exit(1);
+        }
+    }
+
+    if (!options.route) {
+        options.route = "/ripple";
+    } else if (!options.route.match(/^\//)) {
+        options.route = "/" + options.route;
+    }
+
+    app = proxy.start({route: options.route}, app);
+
+    // TODO does not work with custom route (since ripple does not dynamically know custom ones, yet, if set)
+    app.post("/ripple/user-agent", function (req, res, next) {
+        options.userAgent = unescape(req.body.userAgent);
+
+        if (options.userAgent) {
+            console.log("INFO:".green + ' Set Device User Agent (String): "' + options.userAgent + '"');
+        } else {
+            console.log("INFO:".green + ' Using Browser User Agent (String)');
+        }
+        next();
+    });
+
+    // TODO: How to make into a dynamic route (using options.route)? (set at build time right now)
+    app.use("/ripple/assets", express.static(__dirname + "/../../pkg/hosted"));
+    app.use(cordovaProject.inject(options));
+    app.use(hosted.inject(options));
+
+    if (!options.remote) {
+        app.use("/ripple/user-agent", cordovaPrepare.refresh());
+        app.use("/", static.inject(options));
+    }
+
+// TODO: This should just talk about how to enable ripple via query params
+//        app.use(options.route + "/enable/", express.static(__dirname + "/../../assets/server"));
+//
+//        console.log();
+//        console.log("INFO:".green + " Load the URL below (in Chrome) to auto-enable Ripple.");
+//        console.log("      " + ("http://localhost:" + app._port + options.route + "/enable/").cyan);
+//        console.log();
+
+    return app;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ */
+var self,
+open = require('open'),
+emulate = require('./../server/emulate');
+
+self = {
+call: function (opts) {
+    self.<span class="apidocCodeKeywordSpan">start</span>(opts);
+},
+start: function (opts) {
+    var app = emulate.start(opts);
+
+    var uri = "http://localhost:" + app._port + "?enableripple=cordova-3.0.0";
+    open(uri);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.help" id="apidoc.module.ripple-emulator.help">module ripple-emulator.help</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.help.call" id="apidoc.element.ripple-emulator.help.call">
+        function <span class="apidocSignatureSpan">ripple-emulator.help.</span>call
+        <span class="apidocSignatureSpan">(command)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function help(command) {
+    var text;
+
+    try {
+        text = style(command || "ripple");
+    }
+    catch (e) {
+        console.log(("Could not find help file for: " + command).red.bold);
+        console.log();
+        text = style("ripple");
+    }
+
+    console.log(text);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        method;
+
+    try {
+        module = require('./' + command);
+    } catch (e) {
+        console.error(('Unknown command: ' + command).red.bold);
+        console.log();
+        help.<span class="apidocCodeKeywordSpan">call</span>();
+        return;
+    }
+
+    method = subcommand &amp;&amp; module[subcommand] ? subcommand : "call";
+    module[method].apply(module, [command === "help" ? subcommand : options]);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.hosted" id="apidoc.module.ripple-emulator.hosted">module ripple-emulator.hosted</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.hosted.inject" id="apidoc.element.ripple-emulator.hosted.inject">
+        function <span class="apidocSignatureSpan">ripple-emulator.hosted.</span>inject
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inject = function (opts) {
+    if (opts.remote) {
+        console.log("INFO:".green + " Remote proxy set to: " + opts.remote);
+    }
+
+    return opts.remote ?
+        remoteInjection(opts) :
+        localInjection(opts);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+url = require('url'),
+
+HEAD_TAG = /&lt;\s*head\s*&gt;/,
+
+HOSTED_PKG_DIR = path.join(__dirname, "..", "..", "..", "pkg", "hosted"),
+
+BOOTSTRAP_FROM_IFRAME = 'if (window.top.ripple) { ' +
+                            'window.top.ripple("bootstrap").<span class="apidocCodeKeywordSpan">inject</span>(window
+, document);' +
+                        '}';
+
+// TODO: Put this and xhr_proxy into common file (epic DRY..)?
+function proxyRemote(opts, req, res) {
+var proxyReqData,
+    proxyReqHeaders,
+    proxyReq,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.index" id="apidoc.module.ripple-emulator.index">module ripple-emulator.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.index.interpret" id="apidoc.element.ripple-emulator.index.interpret">
+        function <span class="apidocSignatureSpan">ripple-emulator.index.</span>interpret
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">interpret = function (args) {
+
+    //convert path to always be an array.
+    parser.map("path", function (v) { return v.forEach ? v : [v]; });
+
+    var parsed = parser.parse(args),
+        subcommand;
+
+    if (parsed.commands.length &gt; 0) {
+        // NOTE: we parse multiple sub commands but only use the first one (for now)
+        subcommand = parsed.commands.length &gt; 1 ? parsed.commands[1] : null;
+        lookup(parsed.commands[0], subcommand, parsed.options);
+    }
+    else {
+        help.call();
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.parser" id="apidoc.module.ripple-emulator.parser">module ripple-emulator.parser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.parser.map" id="apidoc.element.ripple-emulator.parser.map">
+        function <span class="apidocSignatureSpan">ripple-emulator.parser.</span>map
+        <span class="apidocSignatureSpan">(key, func)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">map = function (key, func) {
+    maps[key] = func;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function style(command) {
+var raw = fs
+  .readFileSync(path.join(__dirname, '..', '..', 'doc', 'cli', command + ".md"))
+  .toString('utf8')
+  .replace(MD_COMMENTS, "")
+  .split("\n");
+
+return raw.<span class="apidocCodeKeywordSpan">map</span>(function (line) {
+    if (line.match(/^# /)) {
+        return line.replace(/^# /, '').magenta;
+    }
+    else if (line.match(/^## /)) {
+        return line.replace(/^## /, '').magenta;
+    }
+    else if (line.match(/^ {4}/)) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.parser.parse" id="apidoc.element.ripple-emulator.parser.parse">
+        function <span class="apidocSignatureSpan">ripple-emulator.parser.</span>parse
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function parse(args) {
+    var result = {
+            commands: [],
+            options: {},
+        },
+        i;
+
+    // remove ['node', 'script_name']
+    args = args.slice(2);
+
+    function collectFlagValues(startAt) {
+        var done = false,
+            values;
+
+        values = args.slice(startAt).reduce(function (prev, current) {
+            if (!done &amp;&amp; !current.match(FLAG_PREFIX)) {
+                prev.push(current);
+                i++;
+            } else {
+                done = true;
+            }
+
+            return prev;
+        }, []);
+
+        return values.length &gt; 1 ? values : values[0];
+    }
+
+    // note: this for loop is explicitly used so `i` can be modified outside of it
+    for (i = 0; i &lt; args.length; i++) {
+        if (args[i].match(FLAG_PREFIX)) {
+            result.options[args[i].replace(FLAG_PREFIX, "")] = (args[i + 1] &amp;&amp; !args[i + 1].match(FLAG_PREFIX)) ?
+                                                        collectFlagValues(i + 1) : true;
+        }
+        else {
+            result.commands.push(args[i]);
+        }
+    }
+
+    Object.keys(result.options).forEach(function (key) {
+        if (maps[key]) {
+            result.options[key] = maps[key](result.options[key]);
+        }
+    });
+
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+module.exports = {
+    interpret: function (args) {
+
+//convert path to always be an array.
+parser.map("path", function (v) { return v.forEach ? v : [v]; });
+
+var parsed = parser.<span class="apidocCodeKeywordSpan">parse</span>(args),
+    subcommand;
+
+if (parsed.commands.length &gt; 0) {
+    // NOTE: we parse multiple sub commands but only use the first one (for now)
+    subcommand = parsed.commands.length &gt; 1 ? parsed.commands[1] : null;
+    lookup(parsed.commands[0], subcommand, parsed.options);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.proxy" id="apidoc.module.ripple-emulator.proxy">module ripple-emulator.proxy</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.proxy.start" id="apidoc.element.ripple-emulator.proxy.start">
+        function <span class="apidocSignatureSpan">ripple-emulator.proxy.</span>start
+        <span class="apidocSignatureSpan">(options, app)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function start(options, app) {
+    var corsOptions = {
+        origins: ["*"],
+        methods: ['HEAD', 'GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'TRACE', 'CONNECT', 'PATCH'],
+        credentials: true,
+        headers: []
+    };
+
+    if (!options) { options = {}; }
+    if (!options.port) { options.port = conf.ports.proxy; }
+    if (!app) { app = server.start(options); }
+
+    if (!options.route) {
+        options.route = "";
+    } else if (!options.route.match(/^\//)) {
+        options.route = "/" + options.route;
+    }
+
+    app.use(function (req, res, next) {
+        var headers;
+
+        if (req.headers["access-control-request-headers"]) {
+            headers = req.headers["access-control-request-headers"].split(", ");
+
+            headers.forEach(function (header) {
+                if (!corsOptions.headers.some(function (h) {
+                    return h === header;
+                })) {
+                    corsOptions.headers.push(header);
+                }
+            });
+        }
+
+        next();
+    });
+
+    app.use(cors(corsOptions));
+
+    app.use(express.bodyParser());
+
+    app.all(options.route + "/xhr_proxy", xhrProxyHandler);
+    app.all(options.route + "/jsonp_xhr_proxy", jsonpXHRProxyHandler);
+
+    console.log("INFO:".green + " CORS XHR proxy service on: " +
+                ("http://localhost:" + app._port + options.route + "/xhr_proxy").cyan);
+    console.log("INFO:".green + " JSONP XHR proxy service on: " +
+                ("http://localhost:" + app._port + options.route + "/jsonp_xhr_proxy").cyan);
+
+    return app;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ */
+var self,
+open = require('open'),
+emulate = require('./../server/emulate');
+
+self = {
+call: function (opts) {
+    self.<span class="apidocCodeKeywordSpan">start</span>(opts);
+},
+start: function (opts) {
+    var app = emulate.start(opts);
+
+    var uri = "http://localhost:" + app._port + "?enableripple=cordova-3.0.0";
+    open(uri);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.static" id="apidoc.module.ripple-emulator.static">module ripple-emulator.static</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.static.inject" id="apidoc.element.ripple-emulator.static.inject">
+        function <span class="apidocSignatureSpan">ripple-emulator.static.</span>inject
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inject = function () {
+    return function (req, res, next) {
+        express.static(req.staticSource)(req, res, next);
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+url = require('url'),
+
+HEAD_TAG = /&lt;\s*head\s*&gt;/,
+
+HOSTED_PKG_DIR = path.join(__dirname, "..", "..", "..", "pkg", "hosted"),
+
+BOOTSTRAP_FROM_IFRAME = 'if (window.top.ripple) { ' +
+                            'window.top.ripple("bootstrap").<span class="apidocCodeKeywordSpan">inject</span>(window
+, document);' +
+                        '}';
+
+// TODO: Put this and xhr_proxy into common file (epic DRY..)?
+function proxyRemote(opts, req, res) {
+var proxyReqData,
+    proxyReqHeaders,
+    proxyReq,
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ripple-emulator.version" id="apidoc.module.ripple-emulator.version">module ripple-emulator.version</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ripple-emulator.version.call" id="apidoc.element.ripple-emulator.version.call">
+        function <span class="apidocSignatureSpan">ripple-emulator.version.</span>call
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">call = function () {
+    console.log(packageinfo.version);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+        method;
+
+    try {
+        module = require('./' + command);
+    } catch (e) {
+        console.error(('Unknown command: ' + command).red.bold);
+        console.log();
+        help.<span class="apidocCodeKeywordSpan">call</span>();
+        return;
+    }
+
+    method = subcommand &amp;&amp; module[subcommand] ? subcommand : "call";
+    module[method].apply(module, [command === "help" ? subcommand : options]);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
